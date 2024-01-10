@@ -1,64 +1,100 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	font-family: Arial, sans-serif;
-	background-color: aliceblue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	font-size: 14px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(32, 32, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
+
+.container {
+  display: flex;
+  margin-top: 10%;
+}
+
+.key-value-input {
+  display: inline-flex;
+}
+
+.optional-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  align-self: flex-end;
+}
+
 .form-container {
-	background-color: white;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	width: 320px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 420px;
 }
+
+.json-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
 .form {
-	margin-bottom: 20px;
-	font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
-label {
-	font-weight: bold;
-	margin: 5px;
-	display: block;
+
+.key-input {
+  margin-right: 5px;
 }
+
+.value-input {
+  margin-left: 5px;
+}
+
 input[type="text"],
 select {
-	width: 100%;
-	padding: 8px;
-	border-radius: 4px;
-	border: 1px solid lightgrey;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
+
 select {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 14px;
 }
+
 button {
-	background-color: rgb(106, 204, 243);
-	color: #fff;
-	font-size: 16px;
-	border: none;
-	border-radius: 4px;
-	padding: 10px 16px;
-	cursor: pointer;
+  background-color: rgb(60, 60, 68);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
 }
+
 button:hover {
-	background-color: rgb(80, 200, 239);
+  background-color: rgb(24, 23, 26);
 }
+
 .json {
-	background-color: #f7f7f7;
-	padding: 10px;
-	border-radius: 4px;
-	overflow-x: auto;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
 }

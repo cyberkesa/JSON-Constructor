@@ -1,88 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>Form</title>
-</head>
-<body>
-	<div class="form-container">
-		<form class="form" id="form">
-			<label for="name">name:</label>
-			<input type="text" id="name">
-
-			<label for="comment">comment:</label>
-			<input type="text" id="comment">
-
-			<label for="one">one:</label>
-			<select id="one">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-
-			<label for="two">two:</label>
-			<select id="two">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-
-			<label for="three">three:</label>
-			<select id="three">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-
-			<label for="four">four:</label>
-			<select id="four">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-
-			<label for="five">five:</label>
-			<select id="five">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-			</select>
-
-			<button type="submit">Convert to JSON</button>
-		</form>
-
-		<pre class="json" id="json">{}</pre>
-	</div>
-
-	<script>
-		form.addEventListener("submit", (event) => {
-  			event.preventDefault();
-
-			const data = {
-				name: document.getElementById("name").value,
-				comment: document.getElementById("comment").value,
-				one: document.getElementById("one").value,
-				two: document.getElementById("two").value,
-				three: document.getElementById("three").value,
-				four: document.getElementById("four").value,
-				five: document.getElementById("five").value
-			};
-
-			document.getElementById("json").textContent = JSON.stringify(data, undefined, 2);
-		});
-	</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>JSON Constructor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form class="form" id="form">
+          <div id="keyValueInputs">
+            <div class="key-value-input">
+              <input
+                type="text"
+                placeholder="key"
+                name="key"
+                class="key-input"
+              />
+              <input
+                type="text"
+                placeholder="value"
+                name="value"
+                class="value-input"
+              />
+            </div>
+          </div>
+          <div class="optional-buttons">
+            <button class="btns-o" type="button" onclick="addKeyValuePair()">
+              Add item
+            </button>
+            <button class="btns-o" type="submit">Convert to JSON</button>
+          </div>
+        </form>
+      </div>
+      <div class="json-container">
+        <pre class="json" id="json">{}</pre>
+        <div class="optional-buttons">
+          <button class="btns-o" id="copyButton">Copy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
