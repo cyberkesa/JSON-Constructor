@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(32, 32, 37);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container {
@@ -34,7 +35,7 @@ body {
   padding: 20px;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 420px;
+  width: 300px;
 }
 
 .json-container {
