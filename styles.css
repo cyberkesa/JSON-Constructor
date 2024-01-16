@@ -9,13 +9,21 @@ body {
   background-color: rgb(32, 32, 37);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   font-size: 12px;
 }
 
+.header-text {
+  margin-top: 10%;
+  display: block;
+  color: #f7f7f7;
+  font-size: 39px;
+}
+
 .container {
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .key-value-input {
