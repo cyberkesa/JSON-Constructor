@@ -11,4 +11,11 @@
   .header-text {
     font-size: 25px;
   }
+
+  .btns-o {
+    margin-top: 7px;
+  }
+  .json-container {
+    width: 300px;
+  }
 }

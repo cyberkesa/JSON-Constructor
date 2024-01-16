@@ -40,7 +40,7 @@ body {
 .form-container {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 3px;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -73,7 +73,7 @@ select {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
-  border: 1px solid lightgrey;
+  border: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
   box-sizing: border-box;
   font-size: 14px;
@@ -87,17 +87,17 @@ select {
 }
 
 button {
-  background-color: rgb(60, 60, 68);
-  color: #fff;
-  font-size: 16px;
+  background-color: rgb(215, 215, 215);
+  color: #303030;
+  font-size: 14px;
   border: none;
-  border-radius: 4px;
-  padding: 10px 16px;
+  border-radius: 5px;
+  padding: 4px 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgb(24, 23, 26);
+  background-color: rgb(184, 184, 184);
 }
 
 .json {
@@ -105,4 +105,7 @@ button:hover {
   padding: 10px;
   border-radius: 4px;
   overflow-x: auto;
+}
+.btns-copy {
+  margin-top: 11px;
 }
